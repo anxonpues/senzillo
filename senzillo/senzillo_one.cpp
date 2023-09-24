@@ -24,14 +24,20 @@ int main() {
 		}
 	}
 
-	std::cout.width(6);
+	std::cout.width(5);
 	std::cout.fill('0');
 	std::cout << ust << " - ";
-	std::cout.width(4);
+	std::cout.width(3);
 	std::cout.fill('#');
 	std::cout << (short)uct << " _-_ ";
 	std::cout.width(16);
-	std::cout.fill('X');
+	std::cout.fill('0');
 	std::cout << (uint64_t)ull << std::endl;
+	std::cout <<
+		sizeof(ust ) << " ust  " <<
+		sizeof(uct ) << " uct  " <<
+		sizeof(ull ) << " ull  " <<
+		sizeof(part) << " part " << std::endl;
+
 	std::cin.get();
 }
